@@ -1,23 +1,16 @@
 window.ondevicemotion = function(event) {
 
-  var accelerationY = event.acceleration.y,
-    seconds = secondsPassed();
-  if (seconds < 5) {
-    if (accelerationY > 10) {
-      console.log("Moving");
-      hndlr()
-    } else {
-      console.log("Still");
-    }
+  var accelerationY = event.acceleration.y;
+  if (accelerationY > 3) {
+    console.log("Moving");
+    event.target.removeEventListener('ondevicemotion');
+  } else {
+    console.log("Still");
   }
 }
 
 
-function secondsPassed() {
-  var date = new Date(),
-    s = date.getSeconds();
-  return s;
-}
+
 
 function hndlr(response) {
   for (var i = 0; i < response.items.length; i++) {
