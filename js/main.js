@@ -1,6 +1,6 @@
 window.ondevicemotion = function(event){
-   var accelerationY = event.acceleration.y;
-   if(accelerationY > 10){
+   var accelerationY = event.accelerationIncludingGravity.y;
+   if(accelerationY > 1){
      console.log("Moving");
    } else {
      console.log("Still");

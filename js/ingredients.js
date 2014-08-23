@@ -8,6 +8,7 @@ var theList = ['one', 'two', 'three'],
 
 
 var getIngreds = function(){
-  var mix1 = "<h3>" + theList[0] +  "</b>";
-  $(theMix).append(mix1);
+  var mix1 = "<h3> ingredient 1: " + theList[0] +  "</b>";
+  var mix2 = "<h3> ingredient 2: " + theList[1] +  "</b>";
+  $(theMix).append(mix1 + mix2);
   }   
