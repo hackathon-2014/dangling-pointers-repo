@@ -1,7 +1,8 @@
 window.ondevicemotion = function(event){
    var accelerationY = event.acceleration.y;
-   if(accelerationY > 0){
+   if(accelerationY > 10){
      console.log("Moving");
+     hndlr()
    } else {
      console.log("Still");
    }
