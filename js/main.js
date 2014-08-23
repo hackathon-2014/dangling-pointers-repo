@@ -1,5 +1,5 @@
 window.ondevicemotion = function(event){
-   var accelerationY = event.accelerationIncludingGravity.y;
+   var accelerationY = event.acceleration.y;
    if(accelerationY > 0){
      console.log("Moving");
    } else {
