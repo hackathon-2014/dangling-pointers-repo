@@ -15,3 +15,20 @@ function hndlr(response) {
     document.getElementById("content").innerHTML += "<br>" + item.htmlTitle;
   }
 }
+
+function getInfo() {
+  var jqxhr = $.get( "http://www.davykelly.com/splendrink/getDrinkDetails.php?id=15&format=json", function() {
+    alert( "success" );
+  })
+    .done(function() {
+      alert( "second success" );
+    })
+    .fail(function() {
+      alert( "error" );
+    })
+    .always(function() {
+      alert( "finished" );
+    });
+
+
+}
