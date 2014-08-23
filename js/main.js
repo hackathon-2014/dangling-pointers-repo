@@ -1,11 +1,11 @@
-window.ondevicemotion = function(event){
-   var accelerationY = event.accelerationIncludingGravity.y;
-   if(accelerationY > 1){
-     console.log("Moving");
-   } else {
-     console.log("Still");
-   }
-}
+//window.ondevicemotion = function(event){
+//   var accelerationY = event.accelerationIncludingGravity.y;
+//   if(accelerationY > 1){
+//     console.log("Moving");
+//   } else {
+//     console.log("Still");
+//   }
+//}
 
 
 function hndlr(response) {
