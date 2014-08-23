@@ -70,7 +70,7 @@
         <br>
         <div class="row clearfix">
             <div class="col-md-4 column">
-                <div class="rounder"></div>
+                <button onClick="getIngreds()"><div class="rounder"></div></button>
             </div>
             <div class="col-md-4 column">
                 <div class="rounder">
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="col-md-4 column">
-                <div class="rounder"></div>
+                <div class="rounder"><div id="theMix"></div></div>
             </div>
         </div>
     </div>
@@ -86,6 +86,7 @@
     <script src="js/vendor/jquery-2.1.0.min.js"></script>
     <script src="js/helper.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/ingredients.js"></script>
 
     <!-- Should get what we need, the function that is the callback to this is in the js folder under "main" -->
     <script src="https://www.googleapis.com/customsearch/v1?key=<span class="apiparam">AIzaSyBcvaaXoTXoW6Yt5RvZ_ZiAeVdflBcFVyk</span>&amp;cx=011635656861667157561:zv9punucqei&amp;q=vodka&amp;callback=hndlr"></script>
